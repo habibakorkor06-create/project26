@@ -1,1 +1,7 @@
-// Store dashboard page (Jana) - Manage Bags use case
+export default function StoreDashboard() {
+  return (
+    <div className="container">
+      <h2>Store dashboard</h2>
+    </div>
+  );
+}
