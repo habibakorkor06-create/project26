@@ -12,6 +12,8 @@ app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
+app.use('/api/auth', require('./routes/authRoutes'));   // <- add this line
+
 connectDB();
 
 app.listen(3000, () => {
